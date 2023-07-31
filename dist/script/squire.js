@@ -1,12 +1,10 @@
-class squire extends Character {
-    name;
-    constructor(name, family, age, state, serverTo, servility) {
-        super(name, family, age, state, serverTo, servility);
-        this.name = name;
-        function greeting() { }
-        (name) => {
-            console.log(`Yo soy el escudero ${this.name}, Soy un loser`);
-        };
+import { Characters } from "./characters.js";
+export class squire extends Characters {
+    serverTo;
+    servelity;
+    constructor(name, family, age, state, serverTo, servelity) {
+        super(name, family, age, state);
+        this.serverTo = serverTo;
+        this.servelity = servelity;
     }
 }
-export {};

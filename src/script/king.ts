@@ -1,13 +1,19 @@
-import { Character } from "./characters.js";
+import { Characters } from "./characters.js";
+export class king extends Characters{
 
-class king extends Character{
-  constructor(public name: string, family: string, age : number,state: boolean, regnalYears:number){
-    super(name,family,age,state,regnalYears);
+  regnalYears;
 
-    function greeting=(name)=>{
+    constructor(
 
-      console.log(`YO SOY EL REY ${this.name}, "Vais a morir todos!"`);
-    }
+      name: string,
+      family: string, 
+      age : number,
+      state: boolean,
+      regnalYears:number){
+
+    super(name,family,age,state);
+
+    this.regnalYears =regnalYears;
 
 }
 

@@ -1,14 +1,20 @@
-import { Character } from "./characters.js";
+import { Characters } from "./characters.js";
 
-class adviser extends Character{
-  constructor(public name: string, family: string, age : number,state: boolean, arma : string, skill: number, characterWhomHeAdvised: string){
-    super(name,family,age,state,arma, skill,characterWhomHeAdvised);
+export class adviser extends Characters{
+characterWhomHeAdvised;
+  constructor(
 
-    function greeting=(name)=>{
+    name: string,
+    family: string, 
+    age : number,
+    state: boolean,
+    characterWhomHeAdvised:string){
 
-      console.log(`Yo soy el asesor ${this.name}, No sé por qué, pero creo que voy a morir pronto`);
-    }
+    super(name,family,age,state);
 
+    this.characterWhomHeAdvised = characterWhomHeAdvised;
+
+  
 }
 
 }
